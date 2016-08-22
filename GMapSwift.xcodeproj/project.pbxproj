@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D08E812414A3D261A4E80D97 /* libPods-GMapSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E82283DA54FC900D99A2026F /* libPods-GMapSwift.a */; };
 		DD26C2511D58269600AD2E39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26C2501D58269600AD2E39 /* AppDelegate.swift */; };
 		DD26C2531D58269600AD2E39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26C2521D58269600AD2E39 /* ViewController.swift */; };
 		DD26C2561D58269600AD2E39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD26C2541D58269600AD2E39 /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		DD26C25B1D58269600AD2E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD26C25A1D58269600AD2E39 /* Assets.xcassets */; };
 		DD26C25E1D58269600AD2E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD26C25C1D58269600AD2E39 /* LaunchScreen.storyboard */; };
 		DD26C2691D58269600AD2E39 /* GMapSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD26C2681D58269600AD2E39 /* GMapSwiftTests.swift */; };
+		DD6114071D6980FF008ECC84 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6114051D6980FF008ECC84 /* SWRevealViewController.m */; };
+		DD6114091D698493008ECC84 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6114081D698493008ECC84 /* MenuViewController.swift */; };
+		DD61140B1D6AAAF5008ECC84 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD61140A1D6AAAF5008ECC84 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C0D0FCC9AC7DCCF1274A8D1 /* Pods-GMapSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMapSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GMapSwift/Pods-GMapSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		7F90095A37D91B09B36A794D /* Pods-GMapSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMapSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMapSwift/Pods-GMapSwift.release.xcconfig"; sourceTree = "<group>"; };
 		DD26C24D1D58269600AD2E39 /* GMapSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMapSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD26C2501D58269600AD2E39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD26C2521D58269600AD2E39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD26C2521D58269600AD2E39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		DD26C2551D58269600AD2E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD26C2581D58269600AD2E39 /* GMapSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GMapSwift.xcdatamodel; sourceTree = "<group>"; };
 		DD26C25A1D58269600AD2E39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +44,12 @@
 		DD26C2641D58269600AD2E39 /* GMapSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMapSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD26C2681D58269600AD2E39 /* GMapSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapSwiftTests.swift; sourceTree = "<group>"; };
 		DD26C26A1D58269600AD2E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD6114031D6980FF008ECC84 /* GMapSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GMapSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD6114041D6980FF008ECC84 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		DD6114051D6980FF008ECC84 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		DD6114081D698493008ECC84 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		DD61140A1D6AAAF5008ECC84 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E82283DA54FC900D99A2026F /* libPods-GMapSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GMapSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D08E812414A3D261A4E80D97 /* libPods-GMapSwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +71,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A30CF8B6E62E03EA25988D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E82283DA54FC900D99A2026F /* libPods-GMapSwift.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD139FB4F98A1A74BF6E3A5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C0D0FCC9AC7DCCF1274A8D1 /* Pods-GMapSwift.debug.xcconfig */,
+				7F90095A37D91B09B36A794D /* Pods-GMapSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DD26C2441D58269600AD2E39 = {
 			isa = PBXGroup;
 			children = (
 				DD26C24F1D58269600AD2E39 /* GMapSwift */,
 				DD26C2671D58269600AD2E39 /* GMapSwiftTests */,
 				DD26C24E1D58269600AD2E39 /* Products */,
+				AD139FB4F98A1A74BF6E3A5C /* Pods */,
+				3A30CF8B6E62E03EA25988D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +111,7 @@
 		DD26C24F1D58269600AD2E39 /* GMapSwift */ = {
 			isa = PBXGroup;
 			children = (
+				DD6114021D6980CF008ECC84 /* SWRevealViewController */,
 				DD26C2501D58269600AD2E39 /* AppDelegate.swift */,
 				DD26C2521D58269600AD2E39 /* ViewController.swift */,
 				DD26C2541D58269600AD2E39 /* Main.storyboard */,
@@ -86,6 +119,8 @@
 				DD26C25C1D58269600AD2E39 /* LaunchScreen.storyboard */,
 				DD26C25F1D58269600AD2E39 /* Info.plist */,
 				DD26C2571D58269600AD2E39 /* GMapSwift.xcdatamodeld */,
+				DD6114081D698493008ECC84 /* MenuViewController.swift */,
+				DD61140A1D6AAAF5008ECC84 /* Location.swift */,
 			);
 			path = GMapSwift;
 			sourceTree = "<group>";
@@ -99,6 +134,16 @@
 			path = GMapSwiftTests;
 			sourceTree = "<group>";
 		};
+		DD6114021D6980CF008ECC84 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD6114041D6980FF008ECC84 /* SWRevealViewController.h */,
+				DD6114051D6980FF008ECC84 /* SWRevealViewController.m */,
+				DD6114031D6980FF008ECC84 /* GMapSwift-Bridging-Header.h */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD26C26D1D58269600AD2E39 /* Build configuration list for PBXNativeTarget "GMapSwift" */;
 			buildPhases = (
+				A9CF7BA7D38EE38E49DABC58 /* [CP] Check Pods Manifest.lock */,
 				DD26C2491D58269600AD2E39 /* Sources */,
 				DD26C24A1D58269600AD2E39 /* Frameworks */,
 				DD26C24B1D58269600AD2E39 /* Resources */,
+				370A6046C39183023A2621D2 /* [CP] Embed Pods Frameworks */,
+				D4B4E044371A14B7E144AC92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,12 +191,13 @@
 		DD26C2451D58269600AD2E39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = app;
 				TargetAttributes = {
 					DD26C24C1D58269600AD2E39 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = RW5LD33K58;
 					};
 					DD26C2631D58269600AD2E39 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -195,14 +244,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		370A6046C39183023A2621D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMapSwift/Pods-GMapSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9CF7BA7D38EE38E49DABC58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4B4E044371A14B7E144AC92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMapSwift/Pods-GMapSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD26C2491D58269600AD2E39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DD26C2531D58269600AD2E39 /* ViewController.swift in Sources */,
+				DD6114091D698493008ECC84 /* MenuViewController.swift in Sources */,
 				DD26C2511D58269600AD2E39 /* AppDelegate.swift in Sources */,
 				DD26C2591D58269600AD2E39 /* GMapSwift.xcdatamodeld in Sources */,
+				DD61140B1D6AAAF5008ECC84 /* Location.swift in Sources */,
+				DD6114071D6980FF008ECC84 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,23 +429,38 @@
 		};
 		DD26C26E1D58269600AD2E39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C0D0FCC9AC7DCCF1274A8D1 /* Pods-GMapSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GMapSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.GMapSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GMapSwift/GMapSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		DD26C26F1D58269600AD2E39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F90095A37D91B09B36A794D /* Pods-GMapSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GMapSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.GMapSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GMapSwift/GMapSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -392,6 +507,7 @@
 				DD26C26F1D58269600AD2E39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD26C2701D58269600AD2E39 /* Build configuration list for PBXNativeTarget "GMapSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +516,7 @@
 				DD26C2721D58269600AD2E39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

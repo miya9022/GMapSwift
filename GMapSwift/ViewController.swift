@@ -15,6 +15,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    var indicateLocation: Location? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initLocationManager()
@@ -53,18 +55,36 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.first {
-            let camera = GMSCameraPosition(target: location.coordinate, zoom: 6.0, bearing: 0, viewingAngle: 0)
+        if(indicateLocation == nil) {
+            if let location = locations.first {
+                let camera = GMSCameraPosition(target: location.coordinate, zoom: 6.0, bearing: 0, viewingAngle: 0)
+                mapView = GMSMapView.mapWithFrame(CGRect.zero, camera: camera)
+            
+                let marker = GMSMarker()
+                marker.position = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+                marker.title = "Hanoi"
+                marker.snippet = "Vietnam"
+                marker.map = mapView
+            
+            }
+        } else {
+            let latitude: Double = (indicateLocation?.latitude)!
+            let longitude: Double = (indicateLocation?.longitude)!
+            
+            let location1 = CLLocation(latitude: latitude, longitude: longitude);
+            
+            let camera = GMSCameraPosition(target: location1.coordinate, zoom: 6.0, bearing: 0, viewingAngle: 0)
             mapView = GMSMapView.mapWithFrame(CGRect.zero, camera: camera)
             
             let marker = GMSMarker()
-            marker.position = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-            marker.title = "Hanoi"
-            marker.snippet = "Vietnam"
+            marker.position = CLLocationCoordinate2D(latitude: location1.coordinate.latitude, longitude: location1.coordinate.longitude)
+            marker.title = indicateLocation?.loc_name
+            marker.snippet = indicateLocation?.loc_real_address
             marker.map = mapView
-            
-            locationManager.stopUpdatingLocation()
         }
+        
+        locationManager.stopUpdatingLocation()
+        
     }
 
     override func didReceiveMemoryWarning() {

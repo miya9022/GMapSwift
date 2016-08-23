@@ -18,6 +18,8 @@
 		DD6114071D6980FF008ECC84 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6114051D6980FF008ECC84 /* SWRevealViewController.m */; };
 		DD6114091D698493008ECC84 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6114081D698493008ECC84 /* MenuViewController.swift */; };
 		DD61140B1D6AAAF5008ECC84 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD61140A1D6AAAF5008ECC84 /* Location.swift */; };
+		DDDAEC2A1D6BFFE6004C9400 /* LostLocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAEC291D6BFFE6004C9400 /* LostLocationsViewController.swift */; };
+		DDDAEC2C1D6C0037004C9400 /* LostLocationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDAEC2B1D6C0037004C9400 /* LostLocationsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		DD6114051D6980FF008ECC84 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		DD6114081D698493008ECC84 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DD61140A1D6AAAF5008ECC84 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		DDDAEC291D6BFFE6004C9400 /* LostLocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LostLocationsViewController.swift; sourceTree = "<group>"; };
+		DDDAEC2B1D6C0037004C9400 /* LostLocationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LostLocationsTableViewCell.swift; sourceTree = "<group>"; };
 		E82283DA54FC900D99A2026F /* libPods-GMapSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GMapSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,8 +123,10 @@
 				DD26C25C1D58269600AD2E39 /* LaunchScreen.storyboard */,
 				DD26C25F1D58269600AD2E39 /* Info.plist */,
 				DD26C2571D58269600AD2E39 /* GMapSwift.xcdatamodeld */,
-				DD6114081D698493008ECC84 /* MenuViewController.swift */,
 				DD61140A1D6AAAF5008ECC84 /* Location.swift */,
+				DD6114081D698493008ECC84 /* MenuViewController.swift */,
+				DDDAEC291D6BFFE6004C9400 /* LostLocationsViewController.swift */,
+				DDDAEC2B1D6C0037004C9400 /* LostLocationsTableViewCell.swift */,
 			);
 			path = GMapSwift;
 			sourceTree = "<group>";
@@ -297,10 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDDAEC2C1D6C0037004C9400 /* LostLocationsTableViewCell.swift in Sources */,
 				DD26C2531D58269600AD2E39 /* ViewController.swift in Sources */,
 				DD6114091D698493008ECC84 /* MenuViewController.swift in Sources */,
 				DD26C2511D58269600AD2E39 /* AppDelegate.swift in Sources */,
 				DD26C2591D58269600AD2E39 /* GMapSwift.xcdatamodeld in Sources */,
+				DDDAEC2A1D6BFFE6004C9400 /* LostLocationsViewController.swift in Sources */,
 				DD61140B1D6AAAF5008ECC84 /* Location.swift in Sources */,
 				DD6114071D6980FF008ECC84 /* SWRevealViewController.m in Sources */,
 			);

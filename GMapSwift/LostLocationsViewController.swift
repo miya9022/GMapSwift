@@ -8,12 +8,17 @@
 
 import UIKit
 
-class LostLocationsViewController: UITableViewController {
+protocol MyCellProtocol {
+    func didTapCell(cell: LostLocationsTableViewCell, indexOfCell : Int?)
+}
+
+class LostLocationsViewController: UITableViewController, MyCellProtocol, SWRevealViewControllerDelegate {
 
     var locations = [Location]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.cellDelegate = self;
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -64,6 +69,23 @@ class LostLocationsViewController: UITableViewController {
         return cell
     }
     
+    var cellDelegate: MyCellProtocol?
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let cell = tableView.dequeueReusableCellWithIdentifier("LostLocationsTableViewCell", forIndexPath: indexPath) as! LostLocationsTableViewCell
+        self.cellDelegate?.didTapCell(cell, indexOfCell: indexPath.row)
+    }
+
+    func didTapCell(cell: LostLocationsTableViewCell, indexOfCell: Int?) {
+        self.revealViewController().revealToggleAnimated(false)
+        cell.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+        if let navigationViewController = self.revealViewController().frontViewController as? UINavigationController {
+            let mainViewController = navigationViewController.topViewController as? ViewController
+            let selectedLocation = locations[indexOfCell!]
+            mainViewController?.indicateLocation = selectedLocation
+            mainViewController?.loadInidicatedView()
+        }
+    }
     
     /*
      // Override to support conditional editing of the table view.
